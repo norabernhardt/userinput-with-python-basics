@@ -3,6 +3,7 @@ import csv
 from datetime import date
 from datetime import datetime
 from dateutils import currentAge
+from printutils import fileContent
 
 
 
@@ -21,6 +22,5 @@ with open("data.csv", "a") as f:
     else:
         print("Du bist zu jung für die Liste")
 
-file=open("data.csv")
-fileContent=file.read()
-print(fileContent)
+result=fileContent()
+print(result)
