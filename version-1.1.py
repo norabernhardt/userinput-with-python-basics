@@ -5,12 +5,14 @@ from datetime import datetime
 from dateutils import currentAge
 from printutils import fileContent
 import writingutils
-import os
+from folder import putFolder
+
 
 name=input("Wie heißt du? ")
 birthdate=input("Wie lautet dein Geburtsdatum? YYYY.MM.DD ")
 birthday=datetime.strptime(birthdate, "%Y.%m.%d")   
 age=currentAge(birthday)
+putFolder(name)
     
 if age > 17:
     writingutils.writeToFile([name,age])
