@@ -29,7 +29,3 @@ with open("data.csv", "a") as f:
 file=open("data.csv")
 fileContent=file.read()
 print(fileContent)
-
-
-
-
