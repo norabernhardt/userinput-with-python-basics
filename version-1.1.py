@@ -11,7 +11,7 @@ birthdate=input("Wie lautet dein Geburtsdatum? YYYY.MM.DD ")
 birthday=datetime.strptime(birthdate, "%Y.%m.%d")   
 age=currentAge(birthday)
     
-if age > 18:
+if age > 17:
     writingutils.writeToFile([name,age])
 else:
     print("Du bist zu jung für die Liste")
