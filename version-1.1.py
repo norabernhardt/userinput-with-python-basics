@@ -5,6 +5,7 @@ from datetime import datetime
 from dateutils import currentAge
 from printutils import fileContent
 import writingutils
+import os
 
 name=input("Wie heißt du? ")
 birthdate=input("Wie lautet dein Geburtsdatum? YYYY.MM.DD ")
